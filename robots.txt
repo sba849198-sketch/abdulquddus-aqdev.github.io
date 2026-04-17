@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aqdev.github.io/sitemap.xml
+
+# منع الـ crawl للملفات غير الضرورية
+Disallow: /images/
