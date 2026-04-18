@@ -1,24 +1,14 @@
-// js/projects.js — بيانات جميع المشاريع
-// لإضافة مشروع جديد: أضف object جديد في هذا المصفوفة
+// js/projects.js v2
+// ملاحظة: لا نستخدم backticks (template literals) لأن بعض المتصفحات القديمة لا تدعمها
 
-const PROJECTS = [
+var PROJECTS = [
   {
     id: "souga",
     slug: "souga",
     title: "سوقة — Souga",
     subtitle: "سوق إلكتروني محلي يربط البائعين بالمشترين",
-    description: `سوقة هو تطبيق سوق إلكتروني متكامل يربط البائعين المحليين بالمشترين في منطقتهم. يوفر التطبيق تجربة تسوق سلسة مع نظام تقييمات، محادثات مباشرة، وإدارة طلبات متقدمة.`,
-    longDescription: `سوقة منصة تجارة إلكترونية محلية مبنية بـ Flutter وFirebase تتيح للبائعين نشر منتجاتهم بسهولة، وللمشترين تصفح السوق والشراء المباشر. يضم التطبيق ثلاثة أدوار: مشتري وبائع ومدير، مع لوحة تحكم كاملة لكل دور.
-
-الميزات الرئيسية:
-• نظام تسجيل دخول آمن مع Firebase Auth
-• رفع صور المنتجات عبر ImageKit مع تحسين تلقائي
-• محادثات مباشرة بين المشترين والبائعين
-• نظام تقييمات ومراجعات
-• إشعارات فورية بحالة الطلبات
-• إعلانات تسويقية بالذكاء الاصطناعي (Gemini)
-• دعم 42 عملة عالمية
-• لوحة تحكم للمدير مع إدارة كاملة`,
+    description: "سوقة هو تطبيق سوق إلكتروني متكامل يربط البائعين المحليين بالمشترين في منطقتهم. يوفر التطبيق تجربة تسوق سلسة مع نظام تقييمات ومحادثات مباشرة وإدارة طلبات متقدمة.",
+    longDescription: "سوقة منصة تجارة إلكترونية محلية مبنية بـ Flutter وFirebase.\n\nالميزات الرئيسية:\n• نظام تسجيل دخول آمن مع Firebase Auth\n• رفع صور المنتجات عبر ImageKit مع تحسين تلقائي\n• محادثات مباشرة بين المشترين والبائعين\n• نظام تقييمات ومراجعات\n• إشعارات فورية بحالة الطلبات\n• إعلانات تسويقية بالذكاء الاصطناعي (Gemini)\n• دعم 42 عملة عالمية\n• لوحة تحكم للمدير مع إدارة كاملة",
     type: "android",
     platform: "Android",
     status: "released",
@@ -29,45 +19,28 @@ const PROJECTS = [
     color: "#DC143C",
     accentColor: "#FFB300",
     icon: "🛒",
-    screenshots: [],
-    downloadUrl: "https://github.com/sba849198-sketch/sba849198-sketch.github.io/releases/download/v1.0.0/app-release.apk",
+    // ─── أضف روابط screenshots من GitHub أو ImageKit ────────────────
+    // مثال: "https://raw.githubusercontent.com/USER/REPO/main/screenshots/screen1.png"
+    screenshots: [
+      // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/home.png",
+      // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/products.png",
+      // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/cart.png"
+    ],
+    downloadUrl: "https://github.com/YOUR_USERNAME/souga/releases/download/v1.0.0/souga-v1.0.0.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
     date: "2025",
     stats: { downloads: "1K+", rating: "4.8", reviews: "120+" }
-  },
-  // ─── أضف مشاريعك هنا ─────────────────────────────────────────────────────
-  // {
-  //   id: "shaibai",
-  //   slug: "shaibai",
-  //   title: "شيب AI",
-  //   subtitle: "وكيل ذكاء اصطناعي لسطح المكتب",
-  //   type: "desktop",          // android | webapp | desktop | website
-  //   platform: "Windows",
-  //   status: "released",       // released | beta | coming_soon
-  //   version: "2.0.0",
-  //   size: "120 MB",
-  //   category: "إنتاجية",
-  //   tags: ["C#", ".NET", "LM Studio", "WinForms"],
-  //   color: "#1565C0",
-  //   accentColor: "#42A5F5",
-  //   icon: "🤖",
-  //   description: "وصف مختصر...",
-  //   longDescription: "وصف تفصيلي...",
-  //   downloadUrl: "https://github.com/YOUR_USERNAME/shaibai/releases/download/v2.0.0/shaibai-setup.exe",
-  //   featured: false,
-  //   date: "2025",
-  //   stats: { downloads: "500+", rating: "4.9", reviews: "45+" }
-  // }
+  }
+  // ─── أضف مشاريع هنا ──────────────────────────────────────────────
 ];
 
-// أنواع المشاريع وتفاصيلها
-const PROJECT_TYPES = {
+var PROJECT_TYPES = {
   android: {
     label: "تطبيق Android",
     icon: "📱",
-    badge: "APK",
+    badge: "Android",
     downloadLabel: "تحميل APK",
     color: "#3DDC84"
   },
@@ -79,7 +52,7 @@ const PROJECT_TYPES = {
     color: "#4285F4"
   },
   desktop: {
-    label: "تطبيق سطح المكتب",
+    label: "سطح المكتب",
     icon: "💻",
     badge: "Desktop",
     downloadLabel: "تحميل البرنامج",
