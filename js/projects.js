@@ -22,7 +22,7 @@ var PROJECTS = [
     // ─── أضف روابط screenshots من GitHub أو ImageKit ────────────────
     // مثال: "https://raw.githubusercontent.com/USER/REPO/main/screenshots/screen1.png"
     screenshots: [
-      // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/home.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1774761818932~2.png",
       // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/products.png",
       // "https://raw.githubusercontent.com/YOUR_USERNAME/souga/main/screenshots/cart.png"
     ],
