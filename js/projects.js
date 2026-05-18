@@ -188,7 +188,7 @@ var PROJECTS = [
     "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/2.png",
     "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/3.png",
     "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/4.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png"
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png",
   ],
   downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
   sourceUrl: "",
