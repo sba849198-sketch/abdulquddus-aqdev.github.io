@@ -14,7 +14,7 @@ var PROJECTS = [
     platform: "Android",
     status: "released",
     version: "1.1.1",
-    size: "54 MB",
+    size: "57 MB",
     category: "تجارة إلكترونية",
     tags: ["Flutter", "Firebase", "Dart", "ImageKit", "Gemini AI"],
     color: "#DC143C",
@@ -23,10 +23,15 @@ var PROJECTS = [
     appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1774761818932~2.png",
     // لإضافة Screenshots: ارفع الصور في مجلد images/ على GitHub ثم أزل التعليق
     screenshots: [
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٥٤٢.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٤٤٦.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٤٣٩.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٤٣٩.png"
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/1.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/2.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/3.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/4.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/5.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/6.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/7.png",
+       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/8.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/9.png"
     ],
     downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
