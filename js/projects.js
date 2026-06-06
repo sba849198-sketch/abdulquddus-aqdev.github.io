@@ -1,90 +1,157 @@
-// js/projects.js — بيانات المشاريع
+// ════════════════════════════════════════════════════════
+//  projects.js — بيانات مشاريع AQ Dev
+//  آخر تحديث: 2026
+// ════════════════════════════════════════════════════════
+
 var BASE_URL = "https://sba849198-sketch.github.io/abdulquddus-aqdev.github.io";
 
+// ════════ أنواع المشاريع ════════
+var PROJECT_TYPES = {
+  android: { label: "Android",      badge: "Android",   downloadLabel: "تحميل APK مجاناً",  color: "#3DDC84" },
+  webapp:  { label: "تطبيق ويب",   badge: "Web App",   downloadLabel: "تحميل الملف",       color: "#4285F4" },
+  desktop: { label: "سطح المكتب",  badge: "Desktop",   downloadLabel: "تحميل البرنامج",    color: "#9C27B0" },
+  website: { label: "موقع ويب",    badge: "Website",   downloadLabel: "زيارة الموقع",      color: "#FF6D00" }
+};
+
+// ════════════════════════════════════════════════════════
+//  قائمة المشاريع
+// ════════════════════════════════════════════════════════
 var PROJECTS = [
+
+  // ══════════════════════════════
+  //  1. سوجا — Souga
+  // ══════════════════════════════
   {
     id: "souga",
     title: "سوجا — Souga",
-    subtitle: "سوق إلكتروني عربي احترافي — حمّله مجاناً الآن",
-    shareTitle: "🛒 تطبيق سوجا — تسوّق وبيع بسهولة من هاتفك | مجاني 100%",
-    shareDesc: "حمّل سوجا الآن واستمتع بتسوق ذكي مع ميزات الدردشة المباشرة والذكاء الاصطناعي وأكثر من 42 عملة عالمية. آمن وسريع وسهل.",
-    description: "تطبيق تجارة إلكترونية متكامل بثلاثة أدوار: مشتري وبائع ومدير.",
-    longDescription: "سوجا منصة تجارة إلكترونية محلية مبنية بـ Flutter وFirebase.\n\nالميزات الرئيسية:\n• تسجيل دخول آمن مع Firebase Auth\n• رفع صور المنتجات عبر ImageKit بجودة عالية\n• محادثات مباشرة بين المشترين والبائعين\n• نظام تقييمات ومراجعات\n• إشعارات فورية بحالة الطلبات\n• إعلانات تسويقية بالذكاء الاصطناعي Gemini\n• دعم 42 عملة عالمية\n• لوحة تحكم للمدير بصلاحيات كاملة",
+    subtitle: "سوق إلكتروني عربي بتقنيات متطورة — تحميل مجاني",
+    shareTitle: "🛒 سوجا — تسوّق وبيع بذكاء من هاتفك | مجاني 100%",
+    shareDesc: "تطبيق سوجا للتجارة الإلكترونية: دردشة مباشرة، ذكاء اصطناعي Gemini، 42 عملة عالمية، رفع صور فائق الجودة. آمن وسريع وعربي.",
+    description: "منصة تجارة إلكترونية محلية متكاملة ببنية ثلاثية الأدوار: مشتري، بائع، مدير — مبنية بـ Flutter وFirebase.",
+    longDescription: "سوجا ليست مجرد تطبيق تسوق، بل منصة تجارية متكاملة أعدتها لتكون بديلاً محلياً حقيقياً لمنصات التجارة الكبرى.\n\nما الذي يجعل سوجا مختلفة؟\n• دردشة مباشرة داخل التطبيق بين المشتري والبائع دون الحاجة لواتساب أو خارجي\n• ذكاء اصطناعي Gemini لكتابة إعلانات تسويقية جذابة بضغطة واحدة\n• رفع صور المنتجات عبر ImageKit بأعلى جودة وأسرع تحميل\n• نظام طلبات متكامل مع تتبع الحالة لحظة بلحظة\n• إشعارات فورية بكل تحديث على طلباتك\n• دعم 42 عملة عالمية مع تحويل آني\n• لوحة تحكم للمدير بصلاحيات شاملة ومرنة\n• تسجيل دخول آمن عبر Firebase Auth مع Google Sign-In",
     type: "android",
-    platform: "Android",
+    platform: "Android 5.0+",
     status: "released",
     version: "1.1.1",
     size: "57 MB",
     category: "تجارة إلكترونية",
-    tags: ["Flutter", "Firebase", "Dart", "ImageKit", "Gemini AI"],
+    tags: ["Flutter", "Firebase", "Dart", "ImageKit", "Gemini AI", "Provider"],
+    keywords: "سوجا souga تطبيق تجارة إلكترونية flutter firebase android سوق عربي بيع شراء gemini ai",
     color: "#DC143C",
     accentColor: "#FFB300",
     icon: "🛒",
     appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1774761818932~2.png",
-    // لإضافة Screenshots: ارفع الصور في مجلد images/ على GitHub ثم أزل التعليق
     screenshots: [
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/1.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/2.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/3.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/4.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/5.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/6.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/7.png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/8.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/1.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/2.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/3.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/4.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/5.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/6.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/7.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/8.png",
       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/9.png"
     ],
     downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
-    date: "2026",
-    stats: { downloads: "500+", rating: "4.8", reviews: "45+" }
+    date: "2026"
   },
+
+  // ══════════════════════════════
+  //  2. مدير الواي فاي
+  // ══════════════════════════════
+  {
+    id: "wifi_manager",
+    title: "مدير الواي فاي",
+    subtitle: "تتبع مصاريف الإنترنت والديون بذكاء — مجاني",
+    shareTitle: "📶 مدير الواي فاي — نظّم مصاريف الإنترنت والاشتراكات بسهولة",
+    shareDesc: "تطبيق مدير الواي فاي: تتبع المصاريف الشهرية، الديون، البطاقات، مع تخزين محلي Hive ومزامنة Firebase. عربي بالكامل.",
+    description: "تطبيق Flutter لإدارة مصاريف الإنترنت، تتبع الاشتراكات، ومراقبة الديون والبطاقات بواجهة عربية سهلة.",
+    longDescription: "مدير الواي فاي وُلد من حاجة حقيقية — إدارة اشتراكات الإنترنت وتتبع ديون العملاء كانت فوضى قبل هذا التطبيق.\n\nبنيته ليحل مشكلة واقعية يعاني منها الكثيرون:\n• تسجيل المصاريف الشهرية وتصنيفها بدقة\n• متابعة ديون العملاء وتواريخ استحقاقها\n• إدارة البطاقات والرصيد المتبقي\n• تخزين كل البيانات محلياً بـ Hive بدون إنترنت\n• مزامنة تلقائية مع Firebase عند الاتصال\n• تقارير مالية شهرية واضحة ومرتبة\n• واجهة RTL عربية احترافية سهلة الاستخدام",
+    type: "android",
+    platform: "Android 5.0+",
+    status: "released",
+    version: "1.0.0",
+    size: "50 MB",
+    category: "مالية وإنتاجية",
+    tags: ["Flutter", "Firebase", "Hive", "Provider", "RTL"],
+    keywords: "مدير الواي فاي wifi manager flutter hive firebase إدارة مصاريف إنترنت ديون اشتراكات android",
+    color: "#1976D2",
+    accentColor: "#42A5F5",
+    icon: "📶",
+    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/app_icon_512.png",
+    screenshots: [
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A1%D9%A6%D9%A0%D9%A1.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A3%D9%A6.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A5%D9%A7.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A3%D9%A0.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A4%D9%A7.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A0%D9%A1%D9%A4.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A0%D9%A2%D9%A8.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A1%D9%A0%D9%A9.png"
+    ],
+    downloadUrl: "https://github.com/sba849198-sketch/WIFI-Manager/releases/download/v1.0.0/app-release.apk",
+    sourceUrl: "https://github.com/sba849198-sketch/WIFI-Manager",
+    demoUrl: "",
+    featured: true,
+    date: "2026-05-08"
+  },
+
+  // ══════════════════════════════
+  //  3. ShaibAI Desktop
+  // ══════════════════════════════
   {
     id: "shaibai-desktop",
     title: "ShaibAI Desktop",
-    subtitle: "ذكاء اصطناعي محلي بدون إنترنت — Windows",
-    shareTitle: "🤖 ShaibAI — وكيل ذكاء اصطناعي يعمل بالكامل بدون إنترنت على Windows",
-    shareDesc: "حمّل ShaibAI وتحدث مع AI محلياً بالعربية بدون أي بيانات تُرسل للإنترنت. يعمل على أي جهاز Windows حتى بدون GPU.",
-    description: "تطبيق Windows يتصل بـ LM Studio لتشغيل نماذج AI محلياً بالكامل بدون إنترنت.",
-    longDescription: "ShaibAI وكيل ذكاء اصطناعي محلي مبني بـ C# و.NET WinForms.\n\nالميزات:\n• يعمل بالكامل بدون إنترنت عبر LM Studio\n• دعم نموذج Qwen2.5-7B-Instruct\n• شريط محادثات جانبي\n• تحميل CPU فقط بدون الحاجة لـ GPU\n• تدفق الاستجابات في الوقت الفعلي\n• واجهة ثنائية اللغة عربي/إنجليزي\n• معالجة نصوص عربية محسّنة",
+    subtitle: "ذكاء اصطناعي محلي كامل بدون إنترنت — Windows",
+    shareTitle: "🤖 ShaibAI — ذكاء اصطناعي محلي يعمل بدون إنترنت على Windows",
+    shareDesc: "تحدث مع الذكاء الاصطناعي بالعربية دون إرسال بيانات للإنترنت. ShaibAI يعمل بالكامل على جهازك عبر LM Studio. مجاني.",
+    description: "برنامج Windows يتصل بـ LM Studio لتشغيل نماذج الذكاء الاصطناعي محلياً بالكامل بدون إنترنت، مبني بـ C# و.NET WinForms.",
+    longDescription: "ShaibAI جاء من قناعة شخصية: الخصوصية حق وليست رفاهية.\n\nبنيت هذا البرنامج ليتيح لك التحدث مع ذكاء اصطناعي متطور دون أن تغادر بياناتك جهازك:\n• يعمل بالكامل بدون إنترنت عبر LM Studio\n• يدعم نموذج Qwen2.5-7B-Instruct بشكل مثالي\n• يعمل على CPU بدون الحاجة لكارت شاشة GPU\n• استجابات تتدفق في الوقت الفعلي (Streaming)\n• شريط محادثات جانبي لتنظيم المحادثات\n• واجهة ثنائية اللغة تدعم العربية والإنجليزية\n• معالجة نصوص عربية محسّنة\n• اختيار النموذج وتحميله بضغطة واحدة",
     type: "desktop",
-    platform: "Windows",
+    platform: "Windows 10 / 11",
     status: "released",
     version: "2.0.0",
     size: "85 MB",
     category: "ذكاء اصطناعي",
     tags: ["C#", ".NET 4.8", "WinForms", "LM Studio", "Qwen2.5"],
+    keywords: "ShaibAI shaibai desktop ذكاء اصطناعي محلي offline AI windows C# WinForms LM Studio Qwen بدون إنترنت",
     color: "#1565C0",
     accentColor: "#42A5F5",
     icon: "🤖",
     appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/ShaibAI.ico",
     screenshots: [
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/‏‏لقطة الشاشة (103).png",
-       "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/‏‏لقطة الشاشة (104).png"
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(103).png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(104).png"
     ],
     downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
-    date: "2026",
-    stats: { downloads: "200+", rating: "4.9", reviews: "28+" }
+    date: "2026"
   },
+
+  // ══════════════════════════════
+  //  4. ShaibAI Web
+  // ══════════════════════════════
   {
     id: "shaibai-web",
     title: "ShaibAI Web",
-    subtitle: "AI محلي في متصفحك — ASP.NET WebForms",
-    shareTitle: "🌐 ShaibAI Web — تحدث مع الذكاء الاصطناعي من أي متصفح بدون تثبيت",
-    shareDesc: "نسخة ويب من ShaibAI تعمل على أي متصفح وتتصل بـ LM Studio محلياً. لا رفع للبيانات، لا إنترنت مطلوب.",
-    description: "نسخة ASP.NET WebForms من ShaibAI تعمل على أي متصفح وتتصل بـ LM Studio.",
-    longDescription: "ShaibAI Web نسخة ويب من وكيل الذكاء الاصطناعي مبنية بـ ASP.NET WebForms.\n\nالميزات:\n• تعمل على أي متصفح بدون تثبيت\n• تتصل بـ LM Studio عبر REST API\n• streaming responses في الوقت الفعلي\n• واجهة عربية RTL بالكامل\n• تاريخ المحادثات\n• نسخ ومشاركة الردود بسهولة",
+    subtitle: "ذكاء اصطناعي في متصفحك — ASP.NET WebForms",
+    shareTitle: "🌐 ShaibAI Web — تحدث مع الذكاء الاصطناعي من أي متصفح",
+    shareDesc: "نسخة ويب من ShaibAI مبنية بـ ASP.NET WebForms تعمل على أي متصفح وتتصل بـ LM Studio محلياً. لا رفع بيانات، لا إنترنت مطلوب.",
+    description: "نسخة ASP.NET WebForms من ShaibAI تعمل من المتصفح وتتصل بـ LM Studio محلياً بدون إرسال أي بيانات للإنترنت.",
+    longDescription: "ShaibAI Web هي النسخة التي تعمل من المتصفح مباشرة — بدون تثبيت، بدون إعداد معقد.\n\nفتحت الباب أمام من لا يريد تثبيت برنامج كامل:\n• تعمل على Chrome وFirefox وEdge بدون مشكلة\n• تتصل بـ LM Studio عبر REST API المحلي\n• استجابات تتدفق في الوقت الفعلي\n• واجهة RTL عربية بالكامل\n• تاريخ محادثات منظم\n• نسخ ومشاركة الردود في خطوة واحدة\n• تصميم متجاوب يعمل على سطح المكتب والموبايل",
     type: "webapp",
-    platform: "ASP.NET / Windows",
+    platform: "ASP.NET / Windows / IIS",
     status: "released",
     version: "1.0.0",
     size: "12 MB",
     category: "ذكاء اصطناعي",
     tags: ["C#", "ASP.NET", "WebForms", "LM Studio", "JavaScript"],
+    keywords: "ShaibAI Web ASP.NET WebForms C# ذكاء اصطناعي ويب ai chat arabic webforms local AI",
     color: "#7B1FA2",
     accentColor: "#CE93D8",
     icon: "🌐",
@@ -94,24 +161,66 @@ var PROJECTS = [
     sourceUrl: "",
     demoUrl: "",
     featured: false,
-    date: "2026",
-    stats: { downloads: "150+", rating: "4.7", reviews: "18+" }
+    date: "2026"
   },
+
+  // ══════════════════════════════
+  //  5. محفظة الديون الذكية
+  // ══════════════════════════════
+  {
+    id: "smart-debt-wallet",
+    title: "محفظة الديون الذكية",
+    subtitle: "نظام متطور لإدارة الديون والمستحقات بالصوت",
+    shareTitle: "💳 محفظة الديون الذكية — أسهل طريقة لتنظيم الديون احترافياً",
+    shareDesc: "نظّم ديونك، تابع السداد، واحصل على تنبيهات ذكية مع إدخال وإخراج صوتي في واجهة عربية احترافية.",
+    description: "تطبيق ذكي لإدارة الديون والحسابات المالية وتتبع عمليات السداد مع دعم الإدخال الصوتي.",
+    longDescription: "محفظة الديون الذكية وُجدت لأن الأوراق والأقلام لم تعد كافية لتتبع الحسابات في عالم رقمي.\n\nهي نظام احترافي مصمم لكل من يتعامل مع ديون يومياً — سواء أفراداً أو أصحاب محلات:\n• تسجيل وتتبع الديون والمستحقات بدقة\n• تسجيل السداد الجزئي والكامل بسهولة\n• إدخال صوتي سريع بدون كتابة\n• إخراج صوتي يقرأ لك البيانات والتنبيهات\n• تنبيهات ذكية بمواعيد الاستحقاق\n• تقارير وإحصائيات مالية منظمة\n• سجل كامل لجميع العمليات والحركات\n• دعم النسخ والمشاركة والطباعة\n• واجهة RTL عربية احترافية",
+    type: "webapp",
+    platform: "Web / Android / Windows",
+    status: "released",
+    version: "1.0.0",
+    size: "14 MB",
+    category: "إدارة مالية",
+    tags: ["إدارة الديون", "محفظة ذكية", "إدخال صوتي", "تقارير مالية", "RTL"],
+    keywords: "محفظة الديون الذكية إدارة الديون debt wallet تسجيل ديون متابعة سداد إدخال صوتي تطبيق مالي عربي",
+    color: "#0D47A1",
+    accentColor: "#64B5F6",
+    icon: "💳",
+    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/icon-debt.jpeg",
+    screenshots: [
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/2.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/3.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/4.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png",
+      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/6.png"
+    ],
+    downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
+    sourceUrl: "",
+    demoUrl: "",
+    featured: true,
+    date: "2026"
+  },
+
+  // ══════════════════════════════
+  //  6. الأزرق نت
+  // ══════════════════════════════
   {
     id: "azraknet",
     title: "الأزرق نت",
-    subtitle: "صفحة تسجيل دخول احترافية لشبكات الإنترنت",
-    shareTitle: "📡 الأزرق نت — واجهة تسجيل دخول شبكة إنترنت بتصميم عصري",
-    shareDesc: "صفحة تسجيل دخول احترافية لشبكة الأزرق نت، تصميم عربي RTL متجاوب مع جميع الأجهزة، تحميل فائق السرعة.",
-    description: "واجهة تسجيل دخول احترافية لشبكة الأزرق نت مع تصميم عصري.",
-    longDescription: "صفحة تسجيل دخول احترافية لشبكة الأزرق نت.\n\nالميزات:\n• تصميم عصري وجذاب\n• واجهة عربية RTL بالكامل\n• تحقق من بيانات المستخدم\n• رسائل خطأ واضحة وسهلة الفهم\n• متوافق مع جميع الأجهزة\n• تحميل سريع جداً",
+    subtitle: "واجهة تسجيل دخول احترافية لشبكات الإنترنت",
+    shareTitle: "📡 الأزرق نت — واجهة دخول شبكة بتصميم عصري عربي",
+    shareDesc: "صفحة تسجيل دخول احترافية لشبكة الأزرق نت، تصميم عربي RTL متجاوب، سريع التحميل وسهل الاستخدام.",
+    description: "واجهة تسجيل دخول احترافية لشبكة الأزرق نت بتصميم عصري وعربي متجاوب مع جميع الأجهزة.",
+    longDescription: "الأزرق نت — واجهة لتسجيل الدخول صممتها لتكون أول تجربة يراها مستخدم الشبكة.\n\nالانطباع الأول يهم:\n• تصميم عصري وجذاب يعكس هوية الشبكة\n• واجهة RTL عربية بالكامل\n• تحقق فوري من بيانات المستخدم\n• رسائل خطأ واضحة ومفهومة\n• متوافق مع جميع الأجهزة (موبايل، تابلت، كمبيوتر)\n• تحميل فائق السرعة",
     type: "website",
     platform: "Web",
     status: "coming_soon",
     version: "1.0.0",
     size: "—",
     category: "ويب",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive", "RTL"],
+    keywords: "الأزرق نت azraknet صفحة دخول شبكة إنترنت html css javascript login page arabic",
     color: "#0097A7",
     accentColor: "#80DEEA",
     icon: "📡",
@@ -121,97 +230,111 @@ var PROJECTS = [
     sourceUrl: "",
     demoUrl: "",
     featured: false,
-    date: "2026",
-    stats: {}
+    date: "2026"
   },
-  {
-  "id": "wifi_manager",
-  "title": "مدير الواي فاي — WiFi Manager",
-  "subtitle": "تطبيق ذكي لإدارة مصاريف الإنترنت والاشتراكات — حمّله مجاناً الآن",
-  "shareTitle": "📶 تطبيق مدير الواي فاي — تتبع مصاريف الإنترنت والديون بسهولة | تطبيق مجاني",
-  "shareDesc": "WiFi Manager: إدارة مصاريف الواي فاي، تتبع الديون والبطاقات، مع تخزين محلي (Hive) ومزامنة Firebase. دعم كامل للغة العربية (RTL).",
-  "description": "تطبيق لإدارة النفقات المالية لاشتراكات الواي فاي وخدمات الإنترنت.",
-  "longDescription": "مدير الواي فاي هو تطبيق Flutter متكامل مصمم لمساعدتك على تتبع وإدارة جميع نفقات الإنترنت الخاصة بك.\n\nالميزات الرئيسية:\n• إدارة المصاريف الشهرية وتصنيفها حسب النوع\n• متابعة الديون والبطاقات\n• تخزين محلي (Hive) مع مزامنة Firebase لضمان عدم فقدان البيانات\n• دعم كامل للغة العربية (RTL)\n• تصميم سهل وجذاب\n• عرض تقارير مالية",
-  "type": "android",
-  "platform": "Android",
-  "status": "released",
-  "version": "1.0.0",
-  "size": "50 MB",
-  "category": "مالية وإنتاجية",
-  "tags": ["Flutter", "Firebase", "Dart", "Hive", "Provider", "RTL"],
-  "color": "#1976D2",
-  "accentColor": "#42A5F5",
-  "icon": "📶",
-  "appIcon": "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/app_icon_512.png",
-  "screenshots": [
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢١٦٠١.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٣٦.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٥٧.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٣٠.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٤٧.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٥٠١٤.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٥٠٢٨.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٥١٠٩.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٣٦.png",
-  ],
-  "downloadUrl": "https://github.com/sba849198-sketch/WIFI-Manager/releases/download/v1.0.0/app-release.apk",
-  "sourceUrl": "https://github.com/sba849198-sketch/WIFI-Manager",
-  "demoUrl": "",
-  "featured": true,
-  "date": "2026-05-08",
-  "stats": { "downloads": "100+", "rating": "5.0", "reviews": "5+" }
-},
-  {
-  id: "smart-debt-wallet",
-  title: "محفظة الديون الذكية",
-  subtitle: "نظام متطور لإدارة الديون والمستحقات بالصوت والذكاء الذكي",
-  shareTitle: "💳 محفظة الديون الذكية — أسهل طريقة لإدارة الديون والمستحقات باحتراف",
-  shareDesc: "نظّم ديونك، تابع السداد، واحصل على تنبيهات ذكية مع دعم الإدخال الصوتي والإخراج الصوتي في واجهة عربية احترافية.",
-  description: "تطبيق ذكي لإدارة الديون والحسابات المالية وتتبع عمليات السداد بطريقة سهلة وآمنة.",
-  longDescription: "محفظة الديون الذكية هو نظام احترافي مصمم لتنظيم الديون والمستحقات المالية للأفراد وأصحاب الأعمال بطريقة عصرية وسهلة الاستخدام.\n\nيوفر التطبيق تجربة ذكية تساعدك على تسجيل الديون، متابعة عمليات السداد، وإدارة الحسابات اليومية بدون تعقيد.\n\nالميزات:\n• إدارة كاملة للديون والمستحقات\n• تسجيل السداد الجزئي والكامل بسهولة\n• إدخال صوتي سريع لإضافة العمليات بدون كتابة\n• إخراج صوتي لقراءة البيانات والتنبيهات\n• تنبيهات ذكية بمواعيد السداد والاستحقاقات\n• واجهة عربية RTL عصرية وسهلة الاستخدام\n• تقارير وإحصائيات مالية منظمة\n• سجل كامل لجميع العمليات والحركات المالية\n• دعم النسخ والمشاركة والطباعة\n• أداء سريع وتجربة استخدام سلسة\n\nسواء كنت تدير ديون العملاء، الحسابات الشخصية، أو معاملات يومية، فإن محفظة الديون الذكية تمنحك تحكمًا كاملاً وتنظيمًا احترافيًا في مكان واحد.",
-  type: "webapp",
-  platform: "Web / Android / Windows",
-  status: "released",
-  version: "1.0.0",
-  size: "14 MB",
-  category: "إدارة مالية",
-  tags: [
-    "إدارة الديون",
-    "محفظة ذكية",
-    "إدارة مالية",
-    "إدخال صوتي",
-    "إخراج صوتي",
-    "تقارير مالية",
-    "RTL"
-  ],
-  color: "#0D47A1",
-  accentColor: "#64B5F6",
-  icon: "💳",
-  appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/icon-debt.jpeg",
-  screenshots: [   
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/2.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/3.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/4.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png",
-    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/6.png",
-  ],
-  downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
-  sourceUrl: "",
-  demoUrl: "",
-  featured: true,
-  date: "2026",
-  stats: {
-    downloads: "500+",
-    rating: "4.9",
-    reviews: "45+"
-  }
-}
-];
 
-var PROJECT_TYPES = {
-  android: { label: "Android",     badge: "Android",  downloadLabel: "تحميل APK مجاناً", color: "#3DDC84" },
-  webapp:  { label: "تطبيق ويب",  badge: "Web App",  downloadLabel: "تحميل الملف",      color: "#4285F4" },
-  desktop: { label: "سطح المكتب", badge: "Desktop",  downloadLabel: "تحميل البرنامج",   color: "#9C27B0" },
-  website: { label: "موقع ويب",   badge: "Website",  downloadLabel: "زيارة الموقع",     color: "#FF6D00" }
-};
+  // ══════════════════════════════════════════════════════
+  //  المشاريع القادمة — معلّقة حتى حين
+  //  لتفعيل أي مشروع: أزل /* و */ المحيطَين به فقط
+  // ══════════════════════════════════════════════════════
+
+  /*
+  // ══════════════════════════════
+  //  7. رياحين الجنان (قادم)
+  // ══════════════════════════════
+  {
+    id: "riyaheen",
+    title: "رياحين الجنان",
+    subtitle: "منصة إسلامية شاملة — قرآن، أذكار، تفسير، فقه",
+    shareTitle: "🌿 رياحين الجنان — تطبيق إسلامي متكامل للقرآن والأذكار والفقه",
+    shareDesc: "رياحين الجنان: قرآن كريم، أذكار صباح ومساء، تفسير، مسائل فقهية، مكتبة صوتية، واختبارات تفاعلية. كل ما تحتاجه في مكان واحد.",
+    description: "منصة إسلامية متكاملة تضم القرآن الكريم، الأذكار، التفسير، الفقه، المكتبة الصوتية، والاختبارات — مبنية بـ Flutter.",
+    longDescription: "رياحين الجنان حلم طالما أردت تحقيقه — منصة إسلامية حقيقية تجمع كل ما يحتاجه المسلم في تطبيق واحد.\n\nما الذي يميزها؟\n• قرآن كريم كامل مع تلاوة صوتية\n• أذكار الصباح والمساء مع عداد تفاعلي\n• تفسير ميسّر للآيات\n• مسائل فقهية منظمة بالأبواب\n• مكتبة صوتية إسلامية\n• اختبارات تفاعلية لاختبار معلوماتك\n• واجهة جميلة وسهلة الاستخدام",
+    type: "android",
+    platform: "Android 5.0+",
+    status: "coming_soon",
+    version: "1.0.0",
+    size: "—",
+    category: "إسلامية",
+    tags: ["Flutter", "Firebase", "Dart", "Quran", "إسلامي"],
+    keywords: "رياحين الجنان تطبيق إسلامي قرآن أذكار تفسير فقه flutter android إسلام مسلم",
+    color: "#2E7D32",
+    accentColor: "#81C784",
+    icon: "🌿",
+    appIcon: "",
+    screenshots: [],
+    downloadUrl: "",
+    sourceUrl: "",
+    demoUrl: "",
+    featured: false,
+    date: "2026"
+  },
+  */
+
+  /*
+  // ══════════════════════════════
+  //  8. ذِمّة (قادم)
+  // ══════════════════════════════
+  {
+    id: "dhimma",
+    title: "ذِمّة",
+    subtitle: "إدارة الديون الشخصية بذكاء — Firebase Sync",
+    shareTitle: "📒 ذِمّة — تطبيق ذكي لإدارة الديون الشخصية مع مزامنة Firebase",
+    shareDesc: "ذمة: سجّل ديونك، تابع السداد، وابحث بالاسم بذكاء. يعمل بدون إنترنت ويزامن تلقائياً مع Firebase. عربي بالكامل.",
+    description: "تطبيق Flutter متكامل لإدارة الديون الشخصية مع مزامنة Firebase وقاموس أسماء عربي ذكي للبحث.",
+    longDescription: "ذِمّة اسم يحمل معنى — الالتزام والأمانة — وهذا بالضبط ما بُني عليه التطبيق.\n\nميزاته التي تجعله فريداً:\n• قاموس أسماء عربي ذكي بخوارزمية Fuzzy Matching للبحث\n• يعمل بالكامل بدون إنترنت مع تخزين محلي\n• مزامنة تلقائية مع Firebase عند الاتصال\n• تسجيل سداد جزئي وكامل مع تاريخ كل عملية\n• فلترة وتصفية ذكية للديون\n• واجهة RTL عربية احترافية",
+    type: "android",
+    platform: "Android 5.0+",
+    status: "coming_soon",
+    version: "1.0.0",
+    size: "—",
+    category: "مالية",
+    tags: ["Flutter", "Firebase", "Dart", "Fuzzy Search", "RTL"],
+    keywords: "ذمة dhimma تطبيق ديون شخصية flutter firebase fuzzy search قاموس أسماء عربي android مالية",
+    color: "#4A148C",
+    accentColor: "#AB47BC",
+    icon: "📒",
+    appIcon: "",
+    screenshots: [],
+    downloadUrl: "",
+    sourceUrl: "",
+    demoUrl: "",
+    featured: false,
+    date: "2026"
+  },
+  */
+
+  /*
+  // ══════════════════════════════
+  //  9. اعثر على هاتفي (قادم)
+  // ══════════════════════════════
+  {
+    id: "find-my-phone",
+    title: "اعثر على هاتفي",
+    subtitle: "تطبيق تتبع الهاتف عن بُعد بالصوت والأوامر",
+    shareTitle: "🔍 اعثر على هاتفي — تتبع وأوامر عن بُعد لهاتفك المفقود",
+    shareDesc: "فقدت هاتفك؟ اعثر عليه بالصوت وأوامر بعيدة. اعثر على هاتفي يتيح لك إرسال صوت إنذار وتحديد الموقع والتحكم عن بُعد.",
+    description: "تطبيق Flutter للعثور على الهاتف المفقود عن بُعد بإرسال صوت إنذار وتتبع الموقع وإرسال أوامر بعيدة.",
+    longDescription: "اعثر على هاتفي — لأن كل شخص أضاع هاتفه مرة على الأقل.\n\nالتطبيق يمنحك راحة البال:\n• إطلاق صوت إنذار عالٍ حتى لو كان الصوت صامتاً\n• تحديد الموقع الجغرافي في الوقت الفعلي\n• إرسال أوامر بعيدة من أي جهاز آخر\n• قفل الشاشة عن بُعد لحماية بياناتك\n• تنبيهات فورية عند تغيير الشريحة\n• يعمل في الخلفية بدون إزعاج",
+    type: "android",
+    platform: "Android 5.0+",
+    status: "coming_soon",
+    version: "1.0.0",
+    size: "—",
+    category: "أدوات وأمان",
+    tags: ["Flutter", "Firebase", "FCM", "Location", "Remote"],
+    keywords: "اعثر على هاتفي find my phone تتبع هاتف مفقود صوت إنذار موقع flutter firebase android أمان",
+    color: "#E65100",
+    accentColor: "#FFA726",
+    icon: "🔍",
+    appIcon: "",
+    screenshots: [],
+    downloadUrl: "",
+    sourceUrl: "",
+    demoUrl: "",
+    featured: false,
+    date: "2026"
+  },
+  */
+
+];
